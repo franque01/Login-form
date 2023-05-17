@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat+Alternates:ital,wght@0,400;0,500;1,300&family=Open+Sans:ital,wght@0,500;0,600;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Open sans;
+    font-size: 400;
+    scroll-behavior: smooth;
+}
+body{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(rgba(41, 40, 40, 0.397), rgba(63, 61, 61, 0.445)), url(darksky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    height: 80vh;
+    transform: translateY(12%);
+}
+.divs{
+    width: 100%
+}
+.helloprt{
+    width: 60%;
+    background-image: linear-gradient(rgba(112, 111, 111, 0.151), rgba(184, 181, 181, 0.815)), url(flowerwall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    width: 40%;
+    background-color: white;
+}
+.hello, .log{
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    color: white;
+}
+.htitle{
+    font-size: 100px;
+    color: white;
+    line-height: 90px;
+}
+input{
+    font-size: 16px;
+    padding: 7px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 10px 0px;
+}
+#check{
+    border: none;
+    border: 2px solid lime;
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logtitle{
+    font-size: 60px;
+    margin-top: 0px;
+    color: black;
+}
+.login p{
+    margin: 40px 0px;
+    color: rgb(179, 174, 174);
+
+}
+
+.inp{
+    margin: 20px 0px;
+    margin: 40px 0px;
+}
+.log{
+    padding-top: 20px;
+}
+.log > span{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    display: flex;
+    justify-content: right;
+    margin: 30px 0px;
+}
+.btn > button{
+    border: none;
+    background-image: linear-gradient(to right, rgba(0, 250, 0, 0.932), rgb(6, 185, 6));
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 9px rgba(34, 189, 34, 0.822);
+    cursor: pointer;
+    color: white;
+}
+.forgot{
+    text-decoration: none;
+    color: rgb(179, 174, 174);
+}
+.helloprt > .hello > .htitle{
+    margin: 20px 0px;
+
+}
+.helloprt > .hello > p{
+    margin: 30px 0px;
+}
+.helloprt > .hello > span{
+    margin: 70px 30px 70px 0px;
+}
+.fa-facebook{
+    color: white;
+    background-color: rgb(107, 43, 226);
+    padding: 7px 40px;
+    border-radius: 30px;
+}
+.fa-twitter{
+    background-color: rgb(0, 204, 255);
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+@media(max-width: 1094px){
+    main{
+        min-width: 95%;
+    }
+}
+@media(max-width: 954px){
+    main{
+        max-width: 100%;
+        min-height: 85vh;
+    }
+}
+@media(max-width: 870px){
+    main{
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        transform: translateY(0%)
+    }
+    .divs{
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+    
+    .helloprt > .hello > span{
+        display: flex;
+        margin: 20px 0px;
+    }
+    .htitle{
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
